@@ -1,4 +1,4 @@
-# Cyberhawk.-The-Way-of-the-Samurai
+# Cyberhawk. The-Way-of-the-Samurai
 
 ## Описание
 Игра представляет собой проект, основанный на коцепции Soulslike игры в стиле cyberpunk. Основаная цель - пробраться через несколько волн противников и выжить!
