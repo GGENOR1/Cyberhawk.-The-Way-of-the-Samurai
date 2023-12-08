@@ -2,7 +2,9 @@
 
 ## Описание
 Игра представляет собой проект, основанный на коцепции Soulslike игры в стиле cyberpunk. Основаная цель - пробраться через несколько волн противников и выжить!
-![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/019858e6-7de3-451b-8a6f-90adec1ef0aa)
+
+![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/d0120ae5-cd8f-457e-815e-cc7203c99654)
+
 
 ## Концепция
 Игрок от 3 лица управляет персонажем, пытаясь не получать урон и эффективно избавляться от наступающих противников.
