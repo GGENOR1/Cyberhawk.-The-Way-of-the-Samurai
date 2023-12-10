@@ -35,7 +35,7 @@ public class TestScript : MonoBehaviour
     }
     public void LookAttack()
     {
-        Stamina.DecreasedStamina(5f);
+        Stamina.DecreasedStamina(1f);
         ComboAttack.ComboAttack = true;
     }
     public void UnlookAttack()

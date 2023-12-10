@@ -1551,7 +1551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b925ee7b5afe2404cb01e439fba7aea9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.5
+      value: -118.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b925ee7b5afe2404cb01e439fba7aea9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1559,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b925ee7b5afe2404cb01e439fba7aea9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.08
+      value: -27.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b925ee7b5afe2404cb01e439fba7aea9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2534,8 +2534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ef99d20f34a474ba7797729381b2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stamina: 100
-  MaxStamina: 100
+  Stamina: 200
+  MaxStamina: 200
   MinStamina: 0
   Bar: {fileID: 1058987324}
   CheckStaminaVar: 1
@@ -3852,6 +3852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HealthBar: {fileID: 1991234135}
+  IsDeathEnemy: 0
 --- !u!54 &1396337749
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4290,6 +4291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HealthBar: {fileID: 1768807742}
+  IsDeathEnemy: 0
 --- !u!54 &1448013914
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4694,6 +4696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 100
   HealthBar: {fileID: 1098650841}
+  IsDeathEnemy: 0
 --- !u!1 &1611298849
 GameObject:
   m_ObjectHideFlags: 0
