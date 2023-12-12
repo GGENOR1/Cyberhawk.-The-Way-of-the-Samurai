@@ -9,12 +9,14 @@ public class TestScript : MonoBehaviour
     StaminaBar Stamina;
     Move_main MoveState;
     TestAttackscript ComboAttack;
+    HealthBar CanTakeDamage;
 
     void Start()
     {
         MoveState = GameObject.FindGameObjectWithTag("Player").GetComponent<Move_main>();
         ComboAttack = GameObject.FindGameObjectWithTag("Player").GetComponent<TestAttackscript>();
         Stamina = GameObject.FindGameObjectWithTag("Player").GetComponent<StaminaBar>();
+        CanTakeDamage = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthBar>();
     }
 
     public void LookMove() {
@@ -51,11 +53,23 @@ public class TestScript : MonoBehaviour
     {
         ComboAttack.CanAttack = true;
     }
+    public void UnlookCanTakeDamage()
+    {
+      
+        CanTakeDamage.CanTakeDamage = true;
+    }
+
+    public void LookCanTakeDamage()
+    {
+        CanTakeDamage.CanTakeDamage = false;
+    }
+
     public void LookJump()
     {
         MoveState.CanJump = false;
         Stamina.DecreasedStamina(15f);
     }
+
     public void UnlookJump()
     {
         MoveState.CanJump = true;

@@ -10,6 +10,7 @@ public class CheseBeh : StateMachineBehaviour
 {
     NavMeshAgent Agent;
     Transform Player;
+    BoxCollider Col;
     List<Transform> points = new List<Transform>(); 
     float AttackRange = 2f;
     float ChaseRange = 10f;
@@ -25,14 +26,15 @@ public class CheseBeh : StateMachineBehaviour
     {
         Transform pointsObject = GameObject.FindGameObjectWithTag("Points").transform;
         Agent = animator.GetComponent<NavMeshAgent>();
+        Col = animator.GetComponent<BoxCollider>();
         Agent.speed = 4;
-        Debug.Log(AttackRange);
+        //Debug.Log(AttackRange);
         foreach (Transform t in pointsObject)
         {
             points.Add(t);
         }
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-        Debug.Log(Player);
+        //Debug.Log(Player);
         Agent.SetDestination(points[0].position);
 
     }
@@ -54,13 +56,13 @@ public class CheseBeh : StateMachineBehaviour
             {
                 animator.SetFloat("speed", 0.2f);
                 Agent.SetDestination(points[0].position);
-                Debug.Log("Иду по делам");
+                //Debug.Log("Иду по делам");
             }
         }
         if (IsAttackingEnrm)
         {
             AttackTimer -= Time.deltaTime;
-            Debug.Log(AttackTimer);
+            //Debug.Log(AttackTimer);
             if (AttackTimer <= 0)
             {
                 IsAttackingEnrm = false;
@@ -71,6 +73,7 @@ public class CheseBeh : StateMachineBehaviour
 
             Agent.SetDestination(Player.position);
             Debug.Log("Надо бить");
+            
             animator.SetBool("IsAttaking", true);
             IsAttackingEnrm = true;
             AttackTimer = AttackDelay;
@@ -81,7 +84,7 @@ public class CheseBeh : StateMachineBehaviour
         if (Distance > AttackRange & NoVisibleRange > Distance)
         {
             Agent.SetDestination(Player.position);
-            Debug.Log("Надо бежать");
+            //Debug.Log("Надо бежать");
             animator.SetFloat("speed", 1f);
         }
 

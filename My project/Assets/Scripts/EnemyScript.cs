@@ -43,8 +43,15 @@ public class EnemyScript : MonoBehaviour
             Debug.Log(HP);
         }
     }
+    public void LookTrigers()
+    {
+        BC.isTrigger = false;
+    }
 
-
+    public void UnlookTrigers()
+    {
+        BC.isTrigger = true;
+    }
 
     IEnumerator Death()
     {
