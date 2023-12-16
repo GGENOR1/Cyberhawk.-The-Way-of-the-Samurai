@@ -13,7 +13,7 @@ public class EnemyScript : MonoBehaviour
     public Slider HealthBar;
     NavMeshAgent Agent;
     Rigidbody[] rb;
-    
+    public Vector3 startPoint;
     BoxCollider BC;
     public bool IsDeathEnemy = false;
     private void Start()
@@ -22,7 +22,8 @@ public class EnemyScript : MonoBehaviour
         Agent = Anim.GetComponent<NavMeshAgent>();
         rb = GetComponentsInChildren<Rigidbody>();
         BC = GetComponent<BoxCollider>();
-        
+        startPoint = GetComponent<Transform>().transform.position;
+        Debug.Log(startPoint);
     }
 
     void Update()

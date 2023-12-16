@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4438508345135546}
   - component: {fileID: 205140611135988708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_Road_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 33142965323877030}
   - component: {fileID: 23285496679638958}
   - component: {fileID: 7172936342486254671}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_Road_05(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 4873831267263236}
   - component: {fileID: 33737942156248802}
   - component: {fileID: 23062174906029798}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_Road_05_LOD1(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

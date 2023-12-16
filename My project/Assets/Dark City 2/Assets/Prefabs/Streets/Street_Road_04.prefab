@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4514890062672952}
   - component: {fileID: 33350627540509604}
   - component: {fileID: 23868246307562866}
-  - component: {fileID: 7096400083242637066}
+  - component: {fileID: 712016348396757071}
   m_Layer: 6
   m_Name: Street_Road_04(Clone)
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7096400083242637066
+--- !u!64 &712016348396757071
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

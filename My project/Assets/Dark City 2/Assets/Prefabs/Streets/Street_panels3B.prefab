@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33870824642297548}
   - component: {fileID: 23134303934016474}
   - component: {fileID: 7822273217872459328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_panels_3B(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4048146612654680}
   - component: {fileID: 205084607499996740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_panels3B
   m_TagString: Untagged
   m_Icon: {fileID: 0}

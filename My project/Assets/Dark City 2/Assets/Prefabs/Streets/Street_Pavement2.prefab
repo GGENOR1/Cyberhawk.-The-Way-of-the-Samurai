@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33259580949900360}
   - component: {fileID: 23625986051170114}
   - component: {fileID: 1829457004085900131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_Pavement_02(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4783276170063092}
   - component: {fileID: 205348256530159908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street_Pavement2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
