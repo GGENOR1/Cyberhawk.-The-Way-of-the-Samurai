@@ -41,12 +41,12 @@ public class Move_main : MonoBehaviour
         if (IsMove)
         {
             Move();
-            stamina.IncreasedStamina(0.1f);
+            stamina.IncreasedStamina(0.5f);
         }
 
         if (!IsRolling && Input.GetKeyDown(KeyCode.Space))
         {
-            stamina.DecreasedStamina(15f);
+            stamina.DecreasedStamina(10f);
             StartCoroutine(Roll());
         }
         Jump();
@@ -81,9 +81,9 @@ public class Move_main : MonoBehaviour
     IEnumerator Roll()
     {
         IsRolling = true;
-        gameObject.GetComponent<Animator>().SetTrigger("Rolls");
+        Anim.SetTrigger("Rolls");
         yield return new WaitForSeconds(waitsecondRoll);
-        IsRolling = false; 
+        IsRolling = false;
     }
 
     public void Jump()

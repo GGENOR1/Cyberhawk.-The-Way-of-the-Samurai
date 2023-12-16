@@ -23,7 +23,7 @@ public class EnemyScript : MonoBehaviour
         rb = GetComponentsInChildren<Rigidbody>();
         BC = GetComponent<BoxCollider>();
         startPoint = GetComponent<Transform>().transform.position;
-        Debug.Log(startPoint);
+        //Debug.Log(startPoint);
     }
 
     void Update()
@@ -41,7 +41,7 @@ public class EnemyScript : MonoBehaviour
         if (HP >= 0 & !IsDeathEnemy)
         {
             HP -= DamageAmount;
-            Debug.Log(HP);
+            //Debug.Log(HP);
         }
     }
     public void LookTrigers()

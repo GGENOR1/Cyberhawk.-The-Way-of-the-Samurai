@@ -13,9 +13,9 @@ public class AttackBeh : StateMachineBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         Col = animator.GetComponentInChildren<MeshCollider>();
-        Debug.Log(Col);
+        //Debug.Log(Col);
         Col.isTrigger = true;
-        Debug.Log("Активировался тут");
+        //Debug.Log("Активировался тут");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

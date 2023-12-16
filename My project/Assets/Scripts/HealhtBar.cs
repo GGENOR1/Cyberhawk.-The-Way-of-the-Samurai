@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
@@ -34,8 +35,12 @@ public class HealthBar : MonoBehaviour
         if (HP >= 0 & CanTakeDamage)
         {
             HP -= DamageAmount;
-            Debug.Log("ХП героя" + HP);
+            //Debug.Log("ХП героя" + HP);
             Bar.fillAmount = HP / 100f;
+        }
+        if (HP <= 0 )
+        {
+            StartCoroutine(LoadMainMenu());
         }
     }
 
@@ -46,4 +51,15 @@ public class HealthBar : MonoBehaviour
             Anim.SetBool("IsDeath", true);
         }
     }
+
+
+    IEnumerator LoadMainMenu()
+    {
+
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+        
+
+
 }

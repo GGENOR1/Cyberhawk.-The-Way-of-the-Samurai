@@ -37,7 +37,7 @@ public class CheseBeh : StateMachineBehaviour
         }
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         //Debug.Log(Player);
-        Agent.SetDestination(SpawnPoint);
+        //Agent.SetDestination(SpawnPoint);
 
     }
 
@@ -52,7 +52,7 @@ public class CheseBeh : StateMachineBehaviour
         float Distance = Vector3.Distance(animator.transform.position, Player.position);
       
         float DistanceToHome = Vector3.Distance(animator.transform.position, SpawnPoint);
-        Debug.Log(DistanceToHome);
+        //Debug.Log(DistanceToHome);
         if (Distance > NoVisibleRange)
         {
             if (DistanceToHome < 1)
@@ -70,6 +70,7 @@ public class CheseBeh : StateMachineBehaviour
         {
             AttackTimer -= Time.deltaTime;
             //Debug.Log(AttackTimer);
+            Debug.Log(AttackTimer);
             if (AttackTimer <= 0)
             {
                 IsAttackingEnrm = false;
@@ -79,11 +80,12 @@ public class CheseBeh : StateMachineBehaviour
         {
 
             Agent.SetDestination(Player.position);
-            Debug.Log("Надо бить");
+            //Debug.Log("Надо бить");
             
             animator.SetBool("IsAttaking", true);
             IsAttackingEnrm = true;
-            AttackTimer = AttackDelay;
+            AttackTimer = Random.Range(0, 2f);
+            //AttackTimer = AttackTimer;
         }
 
 
