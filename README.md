@@ -1,6 +1,8 @@
 # Cyberhawk. The-Way-of-the-Samurai
 Экшен - игра от третьего лица выполненаня в стилистике Cyberpunk. Источниками вдохновения являились игры условного поджанр Soulslike, выпущенные под авторством Хидэтака Миядзаки (Bloodborne, Dark Souls, Elden Ring, Sekiro: Shadows Die Twice и т.д.).
 
+Ссылка на билд: https://drive.google.com/file/d/1u3IXFk-Yzz7y6hvdDgrcHL_-q50zvP6d/view?usp=sharing
+
 ![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/d0120ae5-cd8f-457e-815e-cc7203c99654)
 
 ## GDD
