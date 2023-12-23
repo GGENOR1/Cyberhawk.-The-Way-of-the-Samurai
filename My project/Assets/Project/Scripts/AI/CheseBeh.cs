@@ -16,12 +16,14 @@ public class CheseBeh : StateMachineBehaviour
     bool isAttackingEnrm = false;
     float attackTimer = 0f;
     float attackDelay = 10f;
+    EnemyScript enemyScript;
 
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         Transform pointsObject = GameObject.FindGameObjectWithTag("Points").transform;
         agent = animator.GetComponent<NavMeshAgent>();
+        enemyScript = animator.GetComponent<EnemyScript>();
         spawnPoint = animator.GetComponent<EnemyScript>().startPoint;
         agent.speed = 4;
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -75,6 +77,14 @@ public class CheseBeh : StateMachineBehaviour
             //Debug.Log("Надо бежать");
             animator.SetFloat("speed", 1f);
         }
+
+        if (enemyScript.HP <= 0)
+        {
+            animator.SetBool("IsAttaking", false);
+            enemyScript.isDeathEnemy = true;
+        }
+
+
     }
 
     

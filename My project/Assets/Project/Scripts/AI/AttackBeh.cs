@@ -7,12 +7,15 @@ public class AttackBeh : StateMachineBehaviour
 {
     MeshCollider collider;
     Transform player;
+    EnemyScript enemyScript;
+
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         collider = animator.GetComponentInChildren<MeshCollider>();
-        collider.isTrigger = true; 
+        collider.isTrigger = true;
+        enemyScript = animator.GetComponent<EnemyScript>();
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -25,6 +28,11 @@ public class AttackBeh : StateMachineBehaviour
         if (Distance > 0)
         {
             animator.SetBool("IsAttaking", false);  
+        }
+        if (enemyScript.HP <= 0)
+        {
+            animator.SetBool("IsAttaking", false);
+            enemyScript.isDeathEnemy = true;
         }
     }
 

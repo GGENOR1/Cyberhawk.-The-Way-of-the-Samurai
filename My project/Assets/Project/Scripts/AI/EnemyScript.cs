@@ -29,14 +29,14 @@ public class EnemyScript : MonoBehaviour
     void Update()
     { 
         healthBar.value = HP;
-        if(HP < 0 & !isDeathEnemy)
+        if(HP <= 0 & isDeathEnemy)
         {
             StartCoroutine(Death());
         }
     }
 
     public void TakeDamage(int DamageAmount) {
-        if (HP >= 0 & !isDeathEnemy)
+        if (HP > 0 & !isDeathEnemy)
         {
             HP -= DamageAmount;
         }
@@ -53,17 +53,21 @@ public class EnemyScript : MonoBehaviour
 
     IEnumerator Death()
     {
+        //anim.SetBool("IsDeath", true);
+        //yield return new WaitForSeconds(4f);
+        //isDeathEnemy = true;
+        //anim.SetBool("IsDeath", false);
+        //anim.enabled = false;
+        //agent.enabled = false;
+        //BC.isTrigger = true;
+        //foreach (Rigidbody rb2 in rb)
+        //{
+        //    rb2.isKinematic = false;
+        //    rb2.useGravity = false;
+        //}
         anim.SetBool("IsDeath", true);
-        yield return new WaitForSeconds(4f);
         isDeathEnemy = true;
-        anim.SetBool("IsDeath", false);
-        anim.enabled = false;
-        agent.enabled = false;
-        BC.isTrigger = true;
-        foreach (Rigidbody rb2 in rb)
-        {
-            rb2.isKinematic = false;
-            rb2.useGravity = false;
-        }
+        Destroy(gameObject, 4f);
+        yield return null;
     }
 }
