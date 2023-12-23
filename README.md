@@ -1,7 +1,7 @@
 # Cyberhawk. The-Way-of-the-Samurai
 Экшен - игра от третьего лица выполненаня в стилистике Cyberpunk. Источниками вдохновения являились игры условного поджанр Soulslike, выпущенные под авторством Хидэтака Миядзаки (Bloodborne, Dark Souls, Elden Ring, Sekiro: Shadows Die Twice и т.д.).
 
-Ссылка на билд: https://drive.google.com/file/d/1u3IXFk-Yzz7y6hvdDgrcHL_-q50zvP6d/view?usp=sharing
+Ссылка на билд: [https://drive.google.com/file/d/1u3IXFk-Yzz7y6hvdDgrcHL_-q50zvP6d/view?usp=sharing](https://drive.google.com/file/d/1a-nuqSXHk7TdmxwSr5CyC0NrbryUAIz3/view?usp=sharing)
 
 ![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/d0120ae5-cd8f-457e-815e-cc7203c99654)
 
@@ -10,11 +10,20 @@
 
 ### Жизненный цикл
  - Главный герой появляется в точке спавна, по среди города.
- - Поиск терминала для активации точки выхода.
- - После активации терминала, необходимо найти точку эвакуации.
+ - Поиск терминала (на изображении ниже) для активации точки выхода (также изображении ниже).
+ - После активации терминала (в случае успеха, у вертолета крутятся лопасти), необходимо найти точку эвакуации.
  - В случае успешного выполнения задания проигрывается анимация эвакуации.
  - В случае смерти проигрывается анимации смерти и переход в главное меню.
- - 
+ 
+<div align="center">
+  
+![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/5fc22447-f8f1-45b8-99ff-a31b331ffc6d)
+
+![image](https://github.com/GGENOR1/Cyberhawk.-The-Way-of-the-Samurai/assets/146382716/2f4c1283-fa33-4378-ae78-dbda917222f3)
+
+
+</div>
+ 
 ### Механики
 В соостветвии с основными механиками Soulslike, реализовано следующее:
 - Прыжок.
